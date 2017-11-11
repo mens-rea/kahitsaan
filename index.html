@@ -22,7 +22,7 @@
 
         <input id="submitButton" type="submit" value="Kahit Saan!" onclick="randomize()"></br>
 
-        <h5 id="kahit-saan-result"></h5></br>
+        <h3 id="result"></h3></br>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -34,7 +34,8 @@
 
             function randomize(){
                 var result = Math.floor((Math.random() * (foodplaces.length)) + 0);
-                alert('Sa ' + foodplaces[result] + ' na lang');
+                // alert('Sa ' + foodplaces[result] + ' na lang');
+                document.getElementById("result").innerHTML = "Sa "+foodplaces[result]+" na lang!";
             }
 
             // adding static food spots to the array
@@ -44,10 +45,10 @@
             // foodplaces.push('Liempuhan');
 
             // display current foodspots
-            for(x=0; x<foodplaces.length; x++){
-                document.write(foodplaces[x]);
-                document.write('</br>');
-            }
+            // for(x=0; x<foodplaces.length; x++){
+            //     document.write(foodplaces[x]);
+            //     document.write('</br>');
+            // }
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
