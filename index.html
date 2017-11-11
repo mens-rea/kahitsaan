@@ -24,6 +24,10 @@
 
         <h5 id="kahit-saan-result"></h5></br>
 
+        <input id="newFoodSpot" type="text"></br>
+
+        <input id="submitButton" type="submit" value="Add foodspot" onclick="add()"></br>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
@@ -37,6 +41,11 @@
                 alert('Sa ' + foodplaces[result] + ' na lang');
             }
 
+            function add(){
+                foodplaces.push(document.getElementById("newFoodSpot").value);
+                document.getElementById("kahit-saan-result").innerHTML = foodplaces;
+            }
+
             // adding static food spots to the array
             // foodplaces.push('angkong');
             // foodplaces.push('mcdonalds');
@@ -44,10 +53,10 @@
             // foodplaces.push('Liempuhan');
 
             // display current foodspots
-            for(x=0; x<foodplaces.length; x++){
-                document.write(foodplaces[x]);
-                document.write('</br>');
-            }
+            // for(x=0; x<foodplaces.length; x++){
+            //     document.write(foodplaces[x]);
+            //     document.write('</br>');
+            // }
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
