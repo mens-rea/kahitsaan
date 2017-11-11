@@ -22,7 +22,7 @@
 
         <input id="submitButton" type="submit" value="Kahit Saan!" onclick="randomize()"></br>
 
-        <h5 id="kahit-saan-result"></h5></br>
+        <h3 id="result-container">Sa <span id="result"></span> na lang!</h3>   
 
         <input id="newFoodSpot" type="text"></br>
 
@@ -38,7 +38,8 @@
 
             function randomize(){
                 var result = Math.floor((Math.random() * (foodplaces.length)) + 0);
-                alert('Sa ' + foodplaces[result] + ' na lang');
+                document.getElementById("result").innerHTML = foodplaces[result];
+                document.getElementById('result-container').style.display = "block";
             }
 
             function add(){
