@@ -23,10 +23,12 @@
         <input id="submitButton" type="submit" value="Kahit Saan!" onclick="randomize()"></br>
 
         <h3 id="result-container">Sa <span id="result"></span> na lang!</h3>   
-
-        <input id="newFoodSpot" type="text"></br>
-
-        <input id="submitButton" type="submit" value="Add foodspot" onclick="add()"></br>
+        
+        <div class="add-container">
+            <input id="newFoodSpot" type="text" placeholder="Add a new foodspot">
+            <input id="addButton" type="submit" value="Add foodspot" onclick="add()">
+        </div>
+        
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -44,7 +46,9 @@
 
             function add(){
                 foodplaces.push(document.getElementById("newFoodSpot").value);
-                document.getElementById("kahit-saan-result").innerHTML = foodplaces;
+                document.getElementById.value = "";
+                document.getElementById("result").innerHTML = foodplaces;
+                alert(foodplaces[foodplaces.length-1]+" has been added to choices!");
             }
 
             // adding static food spots to the array
