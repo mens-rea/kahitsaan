@@ -72,17 +72,13 @@ body{
     color:white;
 }
 
+#result{
+    color: red;
+}
 
-
-
-
-
-
-
-
-
-
-
+#result-container{
+    display: none;
+}
 
 /* ==========================================================================
    Media Queries
