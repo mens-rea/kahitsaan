@@ -60,6 +60,18 @@ body{
     text-align: center;
 }
 
+#submitButton{
+    background-color:red;
+    color: white;
+    padding: 10px;
+    border: 0px;
+}
+
+#submitButton:hover{
+    background-color: blue;
+    color:white;
+}
+
 
 
 
